@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RIXEL Store - Estilo Hollow Knight</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <style>
+    body {
+      margin:0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: url('fondo_hk.jpg') center center / cover no-repeat fixed;
+      color: #d1fae5;
+    }
+    header {
+      background: #1f2937;
+      color: #fbbd23;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+    header img {
+      width:70px;
+      height:70px;
+      border-radius:8px;
+    }
+    header h1 { margin:0; font-size:2.5rem; }
+    nav a {
+      color: #fbbd23;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { color: #d1fae5; }
+
+    main { padding: 30px 20px; }
+    .bloque1, .bloque2, .bloque3 {
+      background: rgba(31,41,55,0.9);
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    }
+    .bloque1 img {
+      display: block;
+      margin: 0 auto;
+      max-width: 60%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    h2 { color: #fbbd23; }
+    ul { line-height:1.8; color: #e5e7eb; }
+
+    .bloque2 {
+      background: url('categorias-bg.jpg') center/cover no-repeat;
+      position: relative;
+      color: #fff;
+    }
+    .bloque2::before {
+      content:"";
+      position:absolute;
+      top:0;left:0;right:0;bottom:0;
+      background: rgba(31,41,55,0.8); 
+      border-radius:12px;
+    }
+    .bloque2 > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    table {
+      width:90%;
+      border-collapse: collapse;
+      background: rgba(31,41,55,0.95);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+      margin: 30px auto;
+      color: #e5e7eb;
+      font-size: 0.95rem;
+    }
+    table thead { background: #4b5563; color: #fbbd23; }
+    table th, table td {
+      padding:10px 12px;
+      border: 1px solid #374151;
+      text-align: center;
+    }
+    table tbody tr:hover {
+      background: rgba(75,85,99,0.4);
+      transition: background 0.3s;
+    }
+    table img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    footer {
+      background: #1f2937;
+      color: #d1fae5;
+      padding:40px 25px;
+      text-align:center;
+    }
+    footer h3 {
+      color:#fbbd23;
+      font-size:1.4rem;
+      margin-bottom:15px;
+    }
+    footer p { 
+        max-width:650px; 
+        margin:10px auto; 
+        line-height:1.6; 
+    }
+    footer a {
+      color: #fbbd23;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover { color: #d1fae5; }
+  </style>
+</head>
+<body>
+
+  <header id="top">
+    <img src="logo.png" alt="Logo RIXEL">
+    <div>
+      <h1>RIXEL STORE</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ejemplos">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="inicio" class="bloque1">
+      <h2>Quiénes Somos</h2>
+      <p style="margin-top:20px; font-size:1.1rem;">
+        <b>RIXEL Store</b> fusiona el arte pixelado con la fantasía de mundos oscuros.  
+        Creamos piezas exclusivas que combinan manualidad y estética gamer,
+        ofreciendo a cada cliente una experiencia que trasciende el simple objeto decorativo.
+      </p>
+      <img src="imagen.png" alt="Escena estilo Hollow Knight">
+    </div>
+
+    <div class="bloque3">
+      <h2>Nuestro Objetivo</h2>
+      <p style="font-size:1rem;">
+        Llevar la magia de los videojuegos y el pixel art a tu hogar.  
+        Cada creación busca despertar emoción y nostalgia, invitándote a
+        formar parte de una comunidad que valora el detalle, el color y la historia
+        detrás de cada pieza.
+      </p>
+      <img src="objetivo.jpg" alt="Objetivo RIXEL" style="display:block;margin:20px auto;max-width:70%;border-radius:12px;">
+    </div>
+
+    <div id="catalogo" class="bloque2">
+      <h2>Categorías disponibles</h2>
+      <ul>
+        <li><b>Llaveros</b> coleccionables en pixel art, ideales para personalizar tus accesorios.</li>
+        <li><i>Macetas</i> con acabados rústicos y toques místicos para realzar cualquier espacio.</li>
+        <li><u>Atrapasueños</u> artesanales que mezclan fantasía y tradición.</li>
+        <li>Figuras 3D únicas, pintadas a mano, inspiradas en criaturas de mundos legendarios.</li>
+        <li>Cuadros en pixel art que iluminan ambientes con un contraste entre sombras y destellos dorados.</li>
+      </ul>
+    </div>
+
+    <div id="ejemplos">
+      <h2 style="text-align:center">Galería de Modelos</h2>
+      <table>
+        <thead>
+          <tr><th>Producto</th><th>Imagen</th><th>Descripción</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Llaveros Pokémon</b><br>Precio: S/ 3 – 20</td>
+            <td><img src="llavero1.jpg" alt="Llaveros Pokémon"></td>
+            <td>Llaveros pintados a mano, ligeros y duraderos con brillo especial.</td>
+          </tr>
+          <tr>
+            <td><b>Macetas Decorativas</b><br>Precio: S/ 20 – 30</td>
+            <td><img src="maceta2.jpg" alt="Macetas Decorativas"></td>
+            <td>Macetas de cerámica con toques dorados y estilo subterráneo.</td>
+          </tr>
+          <tr>
+            <td><b>Figuras 3D Minecraft</b><br>Precio: S/ 35 – 50</td>
+            <td><img src="figura2.jpg" alt="Figuras 3D"></td>
+            <td>Figuras tridimensionales de alta calidad para coleccionistas.</td>
+          </tr>
+          <tr>
+            <td><b>Cuadro Zelda</b><br>Precio: S/ 40 – 55</td>
+            <td><img src="cuadro2.jpg" alt="Cuadro Zelda"></td>
+            <td>Pixel art de escenas épicas de Zelda con iluminación suave.</td>
+          </tr>
+          <tr>
+            <td><b>Atrapasueños Épico</b><br>Precio: S/ 15 – 25</td>
+            <td><img src="atrapa.jpg" alt="Atrapasueños Épico"></td>
+            <td>Diseño artesanal inspirado en los sueños del universo Hollow Knight.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer id="contacto">
+    <h3>¿Quieres saber más de RIXEL Store?</h3>
+    <p>
+      Si deseas más información síguenos en redes sociales para conocer lanzamientos, ofertas y eventos.
+    </p>
+    <p>
+      <a href="https://wa.me/51934527986" target="_blank">WhatsApp</a> |
+      <a href="https://www.facebook.com/profile.php?id=61563562919339" target="_blank">Facebook</a>
+    </p>
+    <p>© 2025 RIXEL Store – Todos los derechos reservados.  
+      <a href="#top">Volver al inicio</a>
+    </p>
+  </footer>
+
+</body>
+</html>
